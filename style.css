@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Delius Unicase", cursive;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}   
+
+header {
+    
+    background: linear-gradient(green 20%, rgb(4, 105, 1) 90%)
+    
+    
+}
+
+.menu > li{
+    display: inline-block;
+    padding: 15px; 
+    position: relative;
+    border-bottom: 3px solid transparent;
+}
+
+.container li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(170, 255, 170);
+}
+
+/*.menu a:visited{
+    
+color: rgba(0, 119, 0, 0.514); 
+}*/
+
+.menu li:hover {
+    border-color: rgb(0, 143, 0);
+    cursor: pointer;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*espaçamento entre sessões*/
+
+}
+
+.sobre-a-loja .sobre {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.sobre-a-loja .sobre img {
+    margin-right: 16px;
+    width: 350px;
+    height: auto;
+}
+
+.sobre-a-loja .sobre .texto {
+    max-width: calc(100%-216px);
+    color: rgb(30, 146, 30);
+ }
+
+ .titulo {
+    color: rgb(45, 156, 45);
+    margin-bottom: 10px;
+    border-bottom: 3px solid rgb(11, 170, 46);
+    padding-bottom: 10px;
+ }
+
+ .produtos .produto {
+    display: grid ;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    row-gap: 5%;
+ }
+ 
+ .Gamer img{
+    width: 100%;
+    right: auto;
+    max-width: 500;
+    margin-bottom: 16px;
+ }
+
+ .produtos .produto .Gamer {
+    border: 1px solid rgb(177, 177, 177);
+
+ }
+ 
+ .produtos button {
+    background-color: rgb(153, 235, 153);
+    padding: 3px;
+    color: rgb(11, 170, 46);
+    font: bold;
+    border: none;
+    width: 100% 
+ }
+ 
+ .Gamer h3 {
+    margin-bottom: 12px
+ }
+
+ .Gamer p {
+    margin-bottom: 10px;
+ }
+
+ .Gamer button {
+    cursor: pointer;
+ }
+
+ #contato .container {
+    display: block;
+    margin-top: 50px;
+ }
+
+ .metodo-contato {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ form input,
+ form textarea,
+ form button{
+    display:block;
+    width: 350px;
+    margin-bottom: 8px;
+    padding: 10px;
+ }
+
+ input:focus, textarea:focus {
+    outline-color: rgb(11, 170, 46);
+ }
+
+.social-links img {
+ height: 70px;
+ width: 70px;
+}
+
+.social-links li{
+    display: inline;
+}
+
+footer {
+   background: linear-gradient(green 15% , rgb(0, 156, 26) 80%)
+   
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+   .container {
+      max-width: 90%;
+
+   }
+   .produtos .produto {
+      grid-template-columns: repeat(2, 49%);
+   }
+}
+
+@media screen and (min-width:786px) and (max-width: 1600px) {
+   .container {
+   max-width: 90%;
+   }
+}
+
+@media screen and (min-width:600px) and (max-width: 1000) {
+   #contato {
+      margin-top: 60px ;
+   }
+   .metodo-contato {
+   display: block;
+   text-align: center;
+
+   }
+
+   .metodo-contato > div {
+      margin-bottom: 20px;
+   }
+
+   form input,
+ form textarea,
+ form button{
+   width: 320px;
+   margin-bottom: 12px;
+ }
+}
