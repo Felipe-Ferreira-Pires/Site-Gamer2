@@ -174,7 +174,7 @@ footer {
    }
 }
 
-@media screen and (min-width:600px) and (max-width: 1000) {
+@media screen and (min-width:600px) and (max-width: 1000px) {
    #contato {
       margin-top: 60px ;
    }
@@ -191,7 +191,63 @@ footer {
    form input,
  form textarea,
  form button{
-   width: 320px;
+   width: 90%;
    margin-bottom: 12px;
+ }
+
+ .produtos .produto {
+   grid-template-columns: repeat(2, 49%);
+}
+}
+
+@media screen and (max-width: 640px) {
+   .container {
+    max-width: 80%;
+    margin: 0 auto;
+
+   }
+
+   .conteudo {
+      display: block; 
+      text-align: center;
+   }
+   .sobre-a-loja .sobre {
+       display: block;
+       text-align: center;
+   }
+
+   .sobre-a-loja .sobre img {
+      margin: 0 auto 16px auto;
+      width: 100%;
+   }
+   .sobre-a-loja .sobre .texto {
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto;
+   }
+
+   .produtos .produto {
+      grid-template-columns: repeat(1, 100%);
+      gap:1%
+   }
+
+   #contato {
+      padding: 40px;
+      margin: 40px
+   }
+
+   .metodo-contato {
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .metodo-contato > div {
+      margin-bottom: 30px ;
+   }
+
+   form input,
+ form textarea,
+ form button{
+   width: 100%;
  }
 }
